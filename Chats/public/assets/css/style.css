@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color: #fff;
+}
+
+/* ==================================structure of template======================== */
+.container-fluid{
+    width: 100%;
+    margin: 0 !important;
+    padding:  0 !important;
+    display: flex;
+}
+.headers{
+    width: 20%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: linear-gradient(#12366fbb, #12366fbb), url("../images/6a1f7f2b0d2627742952fc64591d95f3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main{
+    margin-left: 20%;
+    width: 80%;
+    height: 100vh;
+    background-color: #eee;
+}
+
+/* ========================================================= */
+/* ======NAV====== */
+.nav{
+    width: 100%;
+    display: block;
+    padding: 0 1rem;
+}
+.nav .logo{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid #365d9ce0;
+    margin-bottom: 10px ;
+}
+.nav .logo a img{
+    height: 60px;
+    width: 210px;
+}
+
+
+.nav .form-group{
+    width: 100%;
+    margin: 10px 0 !important;
+}
+.nav .form-group .rows{
+    position: relative;
+}
+.nav .form-group .rows .form-control{
+    padding-left: 34px !important;
+    background: none !important;
+    box-shadow: none !important;
+    border: 1px solid #365d9ce0;
+    color: #eee !important;
+    font-size: 0.9rem;
+    border-radius: 4px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+.nav .form-group .rows .form-control::placeholder{
+    color: #eee !important;
+    font-size: 0.9rem;
+}
+.nav .form-group .rows .search{
+    position: absolute;
+    top: 16px;
+    left: 14px;
+    color: #eee;
+    font-size: 0.7rem;
+}
+
+.nav ul{
+    width: 100%;
+    list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.nav ul li{
+    margin: 4px 0;
+}
+.nav ul li a{
+    display: flex;
+    padding: 8px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: #eee;
+    letter-spacing: 0.4px;
+    font-size: 1rem;
+}
+.nav ul li a i{
+    margin-right: 10px;
+    color: #eee;
+    font-size: 1.1rem;
+}
+.active,
+.nav ul li a:hover{
+    background-color: #fff;
+    color: #333;
+}
+.nav ul li a:hover i{   
+    color: #333;
+}
+.nav ul li a.active{
+    color: #333;
+}
+.nav ul li a.active i{
+    color: #333;
+}
+
+/* ===========================================================================Menu top========== */
+.menu-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.1rem 1rem ;
+}
+.menu-top .menu-hmbr{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-top .menu-hmbr .btn-bars{
+    background-color: #fff;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #333;
+}
+.menu-top .menu-hmbr p{
+    margin: 0 !important;
+    padding: 0 !important;
+    font-weight: 600;
+    color: #333;
+}
+.menu-top .users{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-top .users .btn-users{
+    display: flex;
+}
+.menu-top .users .btn-users p{
+    margin: 0 !important;
+    padding: 0 !important;
+    color: #333;
+    margin-right: 10px !important;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.menu-top .users .btn-users i{
+    margin-top: 6px;
+    font-size: 0.8rem;
+    margin-left:10px;
+    margin-right:10px;
+}
+.menu-top .users .btn-bells{
+    border-radius: 50% !important;
+    background-color: #12366fbb !important;
+    color: #eee;
+    position: relative;
+    font-size: 1rem;
+}
+.menu-top .users .btn-bells .number-show{
+    position: absolute;
+    top: -5px;
+    right: -4px;
+    background-color: red;
+    border-radius: 30px !important;
+    font-size: 0.7rem;
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+/* ===============================================card============================= */
+
+.cards{
+    width: 100%;
+    padding: 1.1rem 1rem ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards .cards-header{
+    width: 300px;
+    margin-right: 10px;
+}
+.cards .cards-header .cardheader{
+    padding:  0.6rem 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    
+}
+.cards .cards-header .cardheader .cards-value p{
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block;
+    color: #eee;
+}
+.cards .cards-header .cardheader .cards-value p.values{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-left: 14px;
+}
+.cards .cards-header .cardheader .cards-value p.descriptio{
+    font-size: 0.8rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+.cards .cards-header .cardheader .cards-icons{
+    display: flex;
+    background-color: #12366fbb;
+}
+
+.cards .cards-header .cardheader .cards-icons i{
+    font-size: 4rem;
+    color: #0000003b;
+}
+
+.cards .cards-header .cardfooter{
+    width: 100%;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    /* display: flex; */
+    text-align: center;
+    padding: 5px 0;  
+}
+.cards .cards-header .cardfooter p{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.cards .cards-header .cardfooter p.ticket{
+    font-size: 0.8rem; 
+    color: #eee;
+}
+
+
+
+/* ==================================== */
+.cards .cards-header .color1{
+    background-color: #00c0f0;
+}
+.cards .cards-header .cardheader .cards-icons i.colors1{
+    background-color: #00c0f0;
+}
+.cards .cards-header .colorfooter1{
+    background-color: #01acda;
+}
+/* ==================================== */
+.cards .cards-header .color2{
+    background-color: #f39c10;
+}
+.cards .cards-header .cardheader .cards-icons i.colors2{
+    background-color: #f39c10;
+}
+.cards .cards-header .colorfooter2{
+    background-color: #d68b13;
+}
+
+/* ==================================== */
+.cards .cards-header .color3{
+    background-color: #00a65a;
+}
+.cards .cards-header .cardheader .cards-icons i.colors3{
+    background-color: #00a65a;
+}
+.cards .cards-header .colorfooter3{
+    background-color: #049553;
+}
+
+
+
+/* ==================================== show instante =============*/
+.conteiner{
+    width: 100%;
+    display: flex;
+    padding: 1.1rem 1rem ;
+}
+
+.conteiner .list-pays{
+    width: 300px;
+    border-radius: 4px !important;
+    padding: 10px;
+    background-color: #fcfcfc;
+}
+.conteiner .list-pays .table tbody tr td .btn{
+    padding: 0 !important;
+    margin: 0 !important;
+    padding: 4px 8px !important;
+    background-color: #00a65a !important;
+    font-size: 0.6rem;
+    color: #fff;
+    font-weight: bold;
+}
+.conteiner .list-pays .table tbody tr td{
+    font-size: 0.8rem;
+}
+.conteiner .list-pays .table thead tr th{
+    font-weight: 500 !important;
+} 
+/* .conteiner .list-pays{ */
+
+
+    /* ==================================graficos Charts==================== */
+
+    .charts{
+        width: 400px;
+        height: 350px;
+        background-color: #fcfcfc;
+        margin: 0 10px;
+        padding: 10px ;
+        display: block;
+    }
+    .charts .Chart-Titles{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .charts .Chart-Titles p{
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    .charts .Chart-Titles p.vendasChart{
+        color: #929292;
+        font-weight: 500;
+    }
